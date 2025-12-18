@@ -1,0 +1,184 @@
+.mobile-confirm {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #1e40af 0%, #3b82f6 100%);
+  padding: 2rem 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.mobile-confirm__container {
+  width: 100%;
+  max-width: 420px;
+}
+
+.mobile-confirm__header {
+  text-align: center;
+  margin-bottom: 2rem;
+  color: #ffffff;
+}
+
+.mobile-confirm__title {
+  margin: 0 0 0.5rem;
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+.mobile-confirm__subtitle {
+  margin: 0;
+  font-size: 0.95rem;
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.mobile-confirm__card {
+  background: #ffffff;
+  border-radius: 1.25rem;
+  padding: 1.75rem;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+}
+
+.mobile-confirm__details {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-bottom: 2rem;
+  padding-bottom: 1.5rem;
+  border-bottom: 2px solid #e5e7eb;
+}
+
+.mobile-confirm__detail-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.95rem;
+}
+
+.mobile-confirm__label {
+  color: #6b7280;
+  font-weight: 500;
+}
+
+.mobile-confirm__value {
+  color: #111827;
+  font-weight: 600;
+  text-align: right;
+}
+
+.mobile-confirm__detail-row--amount {
+  margin-top: 0.5rem;
+  padding-top: 1rem;
+  border-top: 2px solid #e5e7eb;
+  font-size: 1.1rem;
+}
+
+.mobile-confirm__amount {
+  font-size: 1.5rem;
+  color: #2563eb;
+  font-weight: 700;
+}
+
+.mobile-confirm__actions {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.mobile-confirm__btn {
+  width: 100%;
+  padding: 1rem 1.5rem;
+  border: none;
+  border-radius: 0.75rem;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  transition: all 0.2s ease;
+  touch-action: manipulation;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.mobile-confirm__btn--accept {
+  background: linear-gradient(135deg, #10b981, #059669);
+  color: #ffffff;
+  box-shadow: 0 4px 12px rgba(16, 185, 129, 0.3);
+}
+
+.mobile-confirm__btn--accept:active {
+  transform: scale(0.98);
+  box-shadow: 0 2px 8px rgba(16, 185, 129, 0.4);
+}
+
+.mobile-confirm__btn--reject {
+  background: linear-gradient(135deg, #ef4444, #dc2626);
+  color: #ffffff;
+  box-shadow: 0 4px 12px rgba(239, 68, 68, 0.3);
+}
+
+.mobile-confirm__btn--reject:active {
+  transform: scale(0.98);
+  box-shadow: 0 2px 8px rgba(239, 68, 68, 0.4);
+}
+
+.mobile-confirm__btn-icon {
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
+.mobile-confirm__status {
+  text-align: center;
+  padding: 2rem 1rem;
+}
+
+.mobile-confirm__status-icon {
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+  font-weight: bold;
+  margin: 0 auto 1rem;
+}
+
+.mobile-confirm__status--success .mobile-confirm__status-icon {
+  background: #d1fae5;
+  color: #059669;
+}
+
+.mobile-confirm__status--error .mobile-confirm__status-icon {
+  background: #fee2e2;
+  color: #dc2626;
+}
+
+.mobile-confirm__status p {
+  margin: 0;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #111827;
+}
+
+.mobile-confirm__loading {
+  text-align: center;
+  color: #ffffff;
+  font-size: 1rem;
+}
+
+@media (max-width: 480px) {
+  .mobile-confirm {
+    padding: 1.5rem 1rem;
+  }
+
+  .mobile-confirm__card {
+    padding: 1.5rem;
+  }
+
+  .mobile-confirm__title {
+    font-size: 1.5rem;
+  }
+}
+
