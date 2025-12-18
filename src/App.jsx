@@ -10,7 +10,6 @@ import Success from './pages/Success';
 import MobileConfirm from './pages/MobileConfirm';
 import MobileSuccess from './pages/MobileSuccess';
 import MobileOpen from './pages/MobileOpen';
-import PaymentConfirmed from './pages/PaymentConfirmed';
 
 function App() {
   return (
@@ -25,7 +24,6 @@ function App() {
       <Route path="/mobile-confirm/:transactionId" element={<MobileConfirm />} />
       <Route path="/mobile-success" element={<MobileSuccess />} />
       <Route path="/mobile-open/:transactionId" element={<MobileOpen />} />
-      <Route path="/payment-confirmed/:transactionId" element={<PaymentConfirmed />} />
       {/* Fallback to login for unknown routes */}
       <Route path="*" element={<Navigate to="/" replace />} />
     </Routes>
